@@ -26,3 +26,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.i-home {
+    color: rgb(0, 200, 255);
+    font-size: 24px;
+}
+
+.logo {
+    width: 200px;
+}

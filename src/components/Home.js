@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import { Link, Navigate } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom";
+import Header from "./Header";
 import swAlert from '@sweetalert/with-react';
 import axios from "axios";
-import Header from "./Header";
-import Footer from "./Footer";
+import CarouselHome from "./CarouselHome";
+
 
 function Home() {
-    let token = localStorage.getItem('token');
+    let token = sessionStorage.getItem('token');
 
     const [movieList, setMovieList] = useState([]);
     console.log(movieList)
@@ -26,9 +27,9 @@ function Home() {
     return (
         <>
             { !token && <Navigate to="/" /> }
-
-            <Header /> 
+            <Header />
             <div className="row col-12 justify-content-around">
+                <CarouselHome movieList={movieList} />
                 {
                     movieList.map((oneMovie, idx) => {
                         return (
@@ -44,7 +45,6 @@ function Home() {
                     })
                 }          
             </div>
-            <Footer />
         </>            
     )
 }
