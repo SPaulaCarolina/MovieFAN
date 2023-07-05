@@ -3,7 +3,7 @@ import TMDB_TOKEN from "../env";
 import swAlert from '@sweetalert/with-react';
 import { useNavigate, Navigate } from "react-router-dom";
 //Styles
-import '../css/app.css'
+import '../css/Login.css'
 
 const Login = () => {
   const navigate = useNavigate()

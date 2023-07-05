@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
-import { AiFillHome, AiOutlineSearch } from 'react-icons/ai';
+import { AiFillHome } from 'react-icons/ai';
 import { VscAccount } from 'react-icons/vsc';
 import { BiCameraMovie, BiFilterAlt } from 'react-icons/bi'
+import "../css/Header.css"
 
 function Header() {
+  
   return (
     <header className="container-fluid">
       <div className="row">
@@ -25,10 +27,6 @@ function Header() {
                 <Link className="nav-link" to="#"><BiFilterAlt className="i-home" /></Link>
               </li>
             </ul>
-          </div>
-          <div className="d-flex flex-row col-2">
-            <input className="form-control m-1" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn m-1" type="submit"><AiOutlineSearch className="i-home"/></button>
           </div>
           <div className="col-2 navbar-collapse m-2" >
             <div className="nav-item dropdown">

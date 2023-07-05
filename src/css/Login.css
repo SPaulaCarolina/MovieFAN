@@ -1,0 +1,25 @@
+.login-title {
+    -webkit-text-stroke: 1px black;
+    color: ghostwhite;
+}
+.portada {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+.formContainer {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    color:ghostwhite;
+    background-color: black;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
